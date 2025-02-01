@@ -8,7 +8,11 @@ const PORT = process.env.PORT || 3000;
 
 // Middleware
 
-app.use(cors({ origin: process.env.Frontend_Url }));
+app.use(cors({
+  origin:   process.env.Frontend_Url ||'*', 
+  methods: ['GET', 'POST'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+}));
 app.use(express.json());
 app.get("/", (req, res) => {
   res.send("Welcome to the Express API!");
