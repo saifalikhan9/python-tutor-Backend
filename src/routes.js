@@ -27,9 +27,7 @@ const getGenAIInstance = () => {
 };
 
 // Define routes
-router.get("/", (req, res) => {
-  res.send("Welcome to the Express API!");
-});
+
 
 
 
