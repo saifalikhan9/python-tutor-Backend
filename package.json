@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon server.js",
-    "start": "node server.js",
-    "prestart": "npm run build" 
+    "start": "node server.js"
+   
   },
   "author": "",
   "license": "ISC",

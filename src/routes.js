@@ -9,7 +9,7 @@ import { PythonShell } from "python-shell";
 import { verifyToken } from "./middlewares.js";
 import bcrypt from "bcryptjs";
 import prompt from "./constant/prompt.js";
-import { log } from "console";
+
 
 const prisma = new PrismaClient();
 
